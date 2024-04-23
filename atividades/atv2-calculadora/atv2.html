@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="atv2.css">
-    <title>Document</title>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/atividades/atv2-calculadora/atv2.css">
+    <script src="/atividades/atv2-calculadora/atv2.js"></script>
 </head>
+
 <body>
-    <div class="calculator">
-        <h2>CALCULADORA</h2>
-        <form>
-            <input type="number" placeholder="Número 1">
-            <select id="operacoes">
-                <option value="adição">+</option>
-                <option value="subtracao">-</option>
-                <option value="multiplicação">*</option>
-                <option value="divisão">/</option>
-            </select>
-            <input type="number" placeholder="Número 2">
 
-            <button type="button">Calcular</button>
-        </form>
-
+ 
+    <div class="calculadora">
+        <h2>Calculadora</h2>
+        <input type="number" id="num1" placeholder="Digite o Número 1">
+        <select id="operador">
+            <option value="">Escolha um Operador</option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" id="num2" placeholder="Digite o Número 2">
+        <button onclick="calcular()">Calcular</button>
+        
     </div>
+
+   
 </body>
+
 </html>
