@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/atividades/aula14/atv1/style.css">
-    <script src="/atividades/aula14/atv1/script.js"></script>
     <title>Aula 14 - Atvidade 1</title>
 </head>
 <body>
@@ -12,8 +11,14 @@
         <h1>Jogo de Adivinhação de Números</h1>
         <p>Tente adivinhar entre 1 e 50. Você tem 3 tentativas.</p>
 
-        <input id="inputNumero" type="number" placeholder="Digite sua tentativa">
-        <button id="btn" onclick="adivinharNumero()">Tentar</button>
+        <span>
+            <input id="inputNumero" type="number" placeholder="Digite sua tentativa">
+            <button id="btn" type="submit">Tentar</button>
+        </span>
+
+        <p id="resultado"></p>
+        <button id="novo_jogo">Novo Jogo</button>
     </div>
+    <script src="/atividades/aula14/atv1/script.js"></script>
 </body>
 </html>
